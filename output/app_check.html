@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Campus Customs — app check</title>
+  <style>
+    body {
+      margin: 0;
+      background: #f3efe6;
+      color: #1c1915;
+      font-family: "Source Sans 3", "Segoe UI", sans-serif;
+      line-height: 1.45;
+    }
+    main {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 2.2rem 1.25rem 4rem;
+    }
+    h1 {
+      margin: 0 0 0.35rem;
+      color: #00356b;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 2.1rem;
+      font-weight: 700;
+    }
+    .intro {
+      margin: 0 0 0.5rem;
+      max-width: 40rem;
+    }
+    h2 {
+      margin: 2.4rem 0 0.4rem;
+      color: #00356b;
+      font-size: 1.35rem;
+    }
+    .proof {
+      margin: 0 0 0.8rem;
+      max-width: 42rem;
+    }
+    img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      background: white;
+      border: 1px solid #d9d0c1;
+    }
+    img.panel {
+      width: 384px;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Campus Customs app check</h1>
+    <p class="intro">Three checks from the live shop. Each heading is one test, then the screenshot, then what it shows.</p>
+
+    <h2>1. Chat checks inventory from the database</h2>
+    <p class="proof">Asked “How much is the Baseball Left Chest Crewneck, and do you have it in XS?” The reply says the crewneck is $58 and XS is sold out, and the card under it shows the same $58.00. That price and the sold-out size match the inventory table, so the assistant is reading stock and price from the database.</p>
+    <img class="panel" src="app_check_images/inventory.png" alt="Shop chat saying the Baseball Left Chest Crewneck is $58 and XS is sold out">
+
+    <h2>2. A category question puts matching cards on the page</h2>
+    <p class="proof">After “what hoodies do you have?” the products page switches to “27 matching pieces” and quotes that question. The cards below are the matching hoodies, each with a photo, name, price, and short description, instead of the full rack.</p>
+    <img src="app_check_images/hoodies.png" alt="Products page showing 27 matching hoodie cards after the hoodie question">
+
+    <h2>3. Rack filters from the usability work</h2>
+    <p class="proof">On the full rack, the Hoodies filter is selected and labeled 27, while T-shirts, crewnecks, jackets, and the rest still show their own counts. The grid under “The rack” is only hoodies, so a shopper can narrow the catalogue without opening the chat.</p>
+    <img src="app_check_images/filters.png" alt="The rack with the Hoodies 27 filter selected and hoodie cards showing">
+  </main>
+</body>
+</html>
